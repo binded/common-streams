@@ -37,8 +37,10 @@
     "babel-preset-es2015-node6": "^0.3.0",
     "babel-tape-runner": "^2.0.1",
     "blue-tape": "^0.2.0",
+    "concat-stream": "^1.5.2",
     "cz-conventional-changelog": "^1.2.0",
     "eslint-config-blockai": "^1.0.1",
+    "mkdirp": "^0.5.1",
     "nodemon": "^1.10.2",
     "rimraf": "^2.5.4",
     "semantic-release": "^4.3.5"
