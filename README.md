@@ -54,3 +54,6 @@ size: 1000 }` object where the size is an integer representing the total
 size in bytes of the stream.
 
 `new SizeStream()`
+
+If passed a callback `new SizeStream(cb)` it will just act as a
+PassThrough stream and call the callback when it's done.

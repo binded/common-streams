@@ -52,3 +52,20 @@ test('kitchen sink', (t) => {
   }))
   rs.pipe(ws)
 })
+
+test('size stream through', (t) => {
+  const rs = getReadStream()
+  const ws = getWriteStream()
+
+  t.plan(2)
+
+  const sizeStream = new SizeStream((size) => {
+    t.equal(size, 2447774)
+  })
+
+  ws.on('finish', () => {
+    t.ok(true)
+  })
+
+  rs.pipe(sizeStream).pipe(ws)
+})
