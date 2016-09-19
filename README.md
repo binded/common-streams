@@ -57,3 +57,9 @@ size in bytes of the stream.
 
 If passed a callback `new SizeStream(cb)` it will just act as a
 PassThrough stream and call the callback when it's done.
+
+### RandomStream
+
+`new RandomStream(max)`
+
+Readable stream that emits `max` random bytes before ending.
