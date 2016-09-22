@@ -63,3 +63,9 @@ PassThrough stream and call the callback when it's done.
 `new RandomStream(max)`
 
 Readable stream that emits `max` random bytes before ending.
+
+### DiscardStream
+
+`new DiscardStream(start)`
+
+Swallows all bytes until `start` is reached.
