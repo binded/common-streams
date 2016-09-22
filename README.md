@@ -69,3 +69,9 @@ Readable stream that emits `max` random bytes before ending.
 `new DiscardStream(start)`
 
 Swallows all bytes until `start` is reached.
+
+### MeterStream
+
+`new MeterStream(max)`
+
+See [meterstream](https://github.com/blockai/meterstream)
